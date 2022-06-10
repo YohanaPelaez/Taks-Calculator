@@ -83,50 +83,46 @@ main{
    
 }
 
-.select-tip {
-    align-content: center;
-    justify-content: center; 
+.select-tip div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
 
 }
 .btn{
-    border: 3px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    padding: 5 10px;
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
+    border: 2px solid transparent;
+    padding: 7px 10px;
+    width: 100%;
+    border-radius: 6px;
     font-family: 'Space Mono', monospace;
     font-size: 22px;
     cursor: pointer;
-    color: white;
+    color: var(--white);
     text-align: center;
 }
 
-.btn-1{
+.btn--green{
     background-color: var(--very-dark-cyan);
     text-align: center;
-    
 }
-.btn-2{
-    background-color: var(--very-dark-cyan);
-    align-content : center;
+.input-tip {
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    font-size: 22px;
+    border-radius: 6px;
+    width: 100%;
+    font-weight: 700;
+    background-color: var(--very-light-grayish-cyan);
+    border: 2px solid transparent;
+    text-align: end;
+    color: var(--very-dark-cyan);
+    outline: none;
 }
-.btn-3{
-    background-color: var(--strong-cyan);
-    align-content : center;
-}
-.btn-4{
-    background-color: var(--very-dark-cyan);
-    align-content : center;
-}
-.btn-5{
-    background-color: var(--very-dark-cyan);
-    align-content : center;
-}
-.btn-6{
-    background-color: var(--light-grayish-cyan);
-    align-content : center;
+.input-tip::placeholder{
+    font-weight: 700;
+    color: var(--dark-grayish-cyan);
 }
 
 .number-people p {
@@ -144,7 +140,7 @@ main{
     align-items: center;
     grid-template-columns: 20px 1fr;
 }
-.number-input:hover {
+.number-input:hover, .input-tip:hover {
     border-color: var(--strong-cyan);
 }
 .input-number {
