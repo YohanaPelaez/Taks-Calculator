@@ -78,3 +78,87 @@ main{
 .input-calculator::placeholder{
     color: var(--very-dark-cyan);
 }
+.select-tip p{
+    color: var(--grayish-cyan);
+   
+}
+
+.select-tip {
+    align-content: center;
+    justify-content: center; 
+
+}
+.btn{
+    border: 3px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 5 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+
+.btn-1{
+    background-color: var(--very-dark-cyan);
+    text-align: center;
+    
+}
+.btn-2{
+    background-color: var(--very-dark-cyan);
+    align-content : center;
+}
+.btn-3{
+    background-color: var(--strong-cyan);
+    align-content : center;
+}
+.btn-4{
+    background-color: var(--very-dark-cyan);
+    align-content : center;
+}
+.btn-5{
+    background-color: var(--very-dark-cyan);
+    align-content : center;
+}
+.btn-6{
+    background-color: var(--light-grayish-cyan);
+    align-content : center;
+}
+
+.number-people p {
+    color: var(--grayish-cyan);
+}
+.number-input {
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 5px 12px;
+    width: 100%;
+    background-color: var(--very-light-grayish-cyan);
+    border-radius: 4px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20px 1fr;
+}
+.number-input:hover {
+    border-color: var(--strong-cyan);
+}
+.input-number {
+    font-family: 'Space Mono', monospace;
+    text-align: end;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--very-dark-cyan);
+    background: transparent;
+    border: none;
+}
+.input-number:focus{
+    outline: none;
+}
+.input-number::placeholder{
+    color: var(--very-dark-cyan);
+}

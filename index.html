@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="index.css">
     <title>Calculator</title>
 </head>
 <body>
     <main>
-        <a class="logo" href="/"><img src="/src/img/logo.svg" alt="logo calculator"></a>
+        <a class="logo" href="/"><img src="src/img/logo.svg" alt="logo calculator"></a>
         <div class="card-calculator">
             <div class="box-calculator">
                 <div class="bill">
                     <p>Bill</p>
                     <div class="bill-input">
-                        <img src="/src/img/icon-dollar.svg" alt="icon dollar">
+                        <img src="src/img/icon-dollar.svg" alt="icon dollar">
                         <input class="input-calculator" type="text" placeholder="0.00">
+                    </div>
+                </div>
+                <div class = "select-tip">
+                    <p>Select Tip %</p>
+                    <div>
+                        <button class = "btn btn-1">5%</button>
+                        <button class = "btn btn-2">10%</button>
+                        <button class = "btn btn-3">15%</button>
+                        <button class = "btn btn-4">25%</button>
+                        <button class = "btn btn-5">50%</button>
+                        <button class = "btn btn-6">Custom</button>
+                    </div>
+                </div>
+                <div class="number-people">
+                    <p>Number of people</p>
+                    <div class="number-input">
+                        <img src="src/img/icon-person.svg" alt="icon person">
+                        <input class="input-number" type="text" placeholder="0">
                     </div>
                 </div>
             </div>
