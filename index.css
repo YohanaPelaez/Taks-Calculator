@@ -93,6 +93,7 @@ main{
     border-color: var(--strong-cyan);
 }
 .input-calculator {
+    width: 100%;
     font-family: 'Space Mono', monospace;
     text-align: end;
     font-size: 24px;
@@ -142,11 +143,11 @@ main{
 
 } 
 
-.btn--green:hover{
+/* .btn--green:hover{
 
     
 
-}
+} */
 .input-tip {
     cursor: pointer;
     font-family: 'Space Mono', monospace;
@@ -186,6 +187,7 @@ main{
     border-color: var(--strong-cyan);
 }
 .input-number {
+    width: 100%;
     font-family: 'Space Mono', monospace;
     text-align: end;
     font-size: 24px;
@@ -199,4 +201,33 @@ main{
 }
 .input-number::placeholder{
     color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width: 850px) {
+    main{
+        box-sizing: border-box;
+        justify-content: space-between;
+        padding: 0 10px 10px 10px;
+        height: auto;
+    }
+    .logo{
+        padding: 30px;
+    }
+    .card-calculator {
+        padding: 25px;
+        flex-direction: column;
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .select-tip div {
+        grid-template-columns: 1fr 1fr;
+    }
+    .box-calculator--green{
+        padding: 30px;
+    }
+    .box-calculator--green > div {
+        padding-bottom: 30px;
+    }
 }
